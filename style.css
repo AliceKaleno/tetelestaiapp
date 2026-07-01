@@ -83,7 +83,7 @@ body{
 
 footer a {
     text-decoration: none; 
-    color: inherit; 
+    color: var(--marrom-claro);
 }
 
 footer a:hover {

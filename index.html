@@ -108,6 +108,15 @@
         width: 100%;
       }
 
+      footer a {
+        text-decoration: none;
+        color: var(--marrom-claro);
+      }
+
+      footer a:hover {
+        opacity: 0.8;
+      }
+
       /* SCREENS */
       .screen {
         display: none;
@@ -1634,7 +1643,8 @@
         </div>
       </header>
 
-      <!-- Organização das telas do app --> <!-- TELA 1: HOME -->
+      <!-- Organização das telas do app -->
+      <!-- TELA 1: HOME -->
 
       <section id="screen-home" class="screen">
         <svg class="icon-hero"><use href="#icon-cross" /></svg>
@@ -1832,7 +1842,11 @@
 
     <footer class="app-footer">
       Geração Ativa &middot; Tetelestai Experience<br />
-      <a href="https://https://portifolio-as.vercel.app/" target="_blank" rel="noopener noreferrer">
+      <a
+        href="https://https://portifolio-as.vercel.app/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         Desenvolvido por: Alice Kalenno - Mídia
       </a>
     </footer>
@@ -1860,7 +1874,7 @@
       //Estado inicial: header escondido enquanto a intro está ativa
       document.querySelector(".app").classList.add("intro-active");
 
-      //Construção do muro de pedra (+- 20 blocos) 
+      //Construção do muro de pedra (+- 20 blocos)
 
       const wallBricksEl = document.getElementById("wall-bricks");
       const shiftClasses = ["shift-a", "shift-b", "shift-c"];
@@ -1884,7 +1898,7 @@
       }
 
       //Separei as etapas do app em blocos de código para facilitar a leitura e manutenção.
-      // Etapa 1: escolher muro 
+      // Etapa 1: escolher muro
 
       document.querySelectorAll(".muro-card").forEach((card) => {
         card.addEventListener("click", () => {
