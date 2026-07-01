@@ -1,0 +1,9 @@
+{
+  "name": "Tetelestai Experience",
+  "short_name": "Tetelestai",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#F1E6D2",
+  "theme_color": "#5C1320",
+  "description": "Uma experiência interativa sobre a obra completa de Cristo."
+}
