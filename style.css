@@ -81,6 +81,16 @@ body{
   width: 100%;
 }
 
+footer a {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+footer a:hover {
+    opacity: 0.8;
+}
+
+
 /* SCREENS */
 .screen{
   display: none;
