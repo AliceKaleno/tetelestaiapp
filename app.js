@@ -1,16 +1,16 @@
-// ====== Navegação entre telas ======
+/* Navegação entre telas */
 function goTo(screenId){
   document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
   document.getElementById(screenId).classList.add('active');
   window.scrollTo(0,0);
 }
 
-// Botões simples com data-next (continuar / voltar)
+/* Botões com data-next (continuar / voltar) */
 document.querySelectorAll('[data-next]').forEach(btn => {
   btn.addEventListener('click', () => goTo(btn.dataset.next));
 });
 
-// ====== Construção do muro de pedra (20 blocos) ======
+/* Construção do muro de pedra (+- 20 blocos) */
 const wallBricksEl = document.getElementById('wall-bricks');
 const shiftClasses = ['shift-a', 'shift-b', 'shift-c'];
 
@@ -28,7 +28,8 @@ function resetCracks(){
   document.querySelectorAll('.crack').forEach(c => c.classList.remove('show'));
 }
 
-// ====== Etapa 1: escolher muro ======
+/* Separei as etapas do jogo em 3 partes, para facilitar a leitura do código */
+/* Etapa 1: escolher muro */
 document.querySelectorAll('.muro-card').forEach(card => {
   card.addEventListener('click', () => {
     const muro = card.dataset.muro;
@@ -41,7 +42,7 @@ document.querySelectorAll('.muro-card').forEach(card => {
   });
 });
 
-// ====== Etapa 2: tentar quebrar o muro ======
+/* Etapa 2: tentar quebrar o muro */
 let tentativas = 0;
 const wallVisual = document.getElementById('wall-visual');
 wallVisual.addEventListener('click', () => {
@@ -71,12 +72,12 @@ wallVisual.addEventListener('click', () => {
   }
 });
 
-// ====== Etapa 3: tocar em TETELESTAI ======
+/* Etapa 3: tocar em TETELESTAI */
 document.getElementById('btn-tetelestai').addEventListener('click', () => {
   goTo('screen-reveal');
 });
 
-// ====== Mural da Cruz (armazenado localmente no navegador) ======
+/* Mural da Cruz está armazenado localmente no navegador */
 const muralKey = 'tetelestai-mural';
 
 function carregarMural(){
@@ -105,7 +106,7 @@ document.getElementById('btn-entregar').addEventListener('click', () => {
   carregarMural();
 });
 
-// Reinicia o app quando volta ao início (reseta tentativas do muro)
+/* Reinicia o app quando volta ao início (reseta tentativas do muro) */
 document.querySelectorAll('[data-next="screen-home"]').forEach(btn => {
   btn.addEventListener('click', () => { tentativas = 0; });
 });

@@ -37,7 +37,7 @@ body{
   overflow: hidden;
 }
 
-/* ===== HEADER ===== */
+/* HEADER */
 .topbar{
   background: var(--vinho);
   padding: 14px 20px;
@@ -81,7 +81,7 @@ body{
   width: 100%;
 }
 
-/* ===== SCREENS ===== */
+/* SCREENS */
 .screen{
   display: none;
   flex: 1;
@@ -125,7 +125,7 @@ body{
   margin-bottom: 26px;
 }
 
-/* ===== MUROS GRID ===== */
+/* MUROS GRID */
 .muros-grid{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -221,7 +221,7 @@ body{
   color: var(--marrom-claro);
 }
 
-/* ===== MURO DE PEDRA ===== */
+/* MURO DE PEDRA */
 .wall-visual{
   width: 230px;
   height: 230px;
@@ -303,7 +303,7 @@ body{
   75%{ transform: translateX(5px) rotate(0.5deg); }
 }
 
-/* ===== TETELESTAI / CENA ===== */
+/* TETELESTAI */
 .scene-sky{
   width: 100%;
   height: 150px;
@@ -459,10 +459,10 @@ body{
   .wall-visual{ width: 190px; height: 190px; }
 }
 
-/* ===== TELAS DE MÓDULO (genérico) ===== */
+/* TELAS DE MÓDULO (genérico) */
 .module-screen{ padding-top: 36px; }
 
-/* ESTUDOS */
+/* arquivo: ESTUDOS */
 .estudos-list{
   width: 100%;
   display: flex;
@@ -488,7 +488,7 @@ body{
 .estudo-titulo{ font-size: 0.88rem; color: var(--vinho-escuro); font-weight: 600; }
 .estudo-card .inline-icon{ flex-shrink: 0; }
 
-/* TROQUE A MENTIRA */
+/* arquivo: TROQUE A MENTIRA */
 .lies-list{
   width: 100%;
   display: flex;
@@ -538,7 +538,7 @@ body{
   transform: rotateX(180deg);
 }
 
-/* O PESO */
+/* arquivo: O PESO */
 .backpack-zone{
   width: 100%;
   min-height: 170px;
@@ -573,7 +573,7 @@ body{
   opacity: 0;
 }
 
-/* A CONTA PAGA */
+/* arquivo: A CONTA PAGA */
 .receipt{
   width: 100%;
   background: var(--bege);
